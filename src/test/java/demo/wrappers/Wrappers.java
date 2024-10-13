@@ -16,4 +16,16 @@ public class Wrappers {
     /*
      * Write your selenium wrappers here
      */
+    public static void clickOnElement(ChromeDriver driver,WebElement element){
+        WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
+        try{
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            element.click();
+            System.out.println("User clicked on element");
+        }catch(Exception e){
+            System.out.println("Exception occurred while clicking on element :"+e.getMessage());
+            e.getStackTrace();
+
+        }
+    }
 }
