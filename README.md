@@ -21,6 +21,29 @@ This project automates the extraction and curation of data from two sources:
    ```bash
    git clone https://github.com/gourishahane/ScrapperData.git
 
+2. Navigate to the project directory:
+   cd Automated-Data-Scraping
+   
+3. Build the project using Gradle:
+   gradle build
+   
+4. Set up the required browser drivers (e.g., ChromeDriver) and ensure they are in the system path.
+
+5. Execute tests using TestNG:
+   gradle test
+
+## Usage
+- Update the config.properties file with the necessary URLs and settings for scraping.
+- Run specific test cases or the entire suite from the terminal or your preferred IDE.
+- JSON files will be saved in the output directory in the project root.
+
+## Dependencies
+- Selenium WebDriver
+- Jackson Library for JSON serialization
+- TestNG for testing and assertions
+- Gradle as the build tool
+
+
 ## Contact Information
 - Name: Gouri Shahane
 - Email: gouri.shahane@example.com
